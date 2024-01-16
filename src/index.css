@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+} 
+main {
+    padding: 2rem 0;
+}
+main .header_container {
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+.container {
+    margin: 0 auto;
+}
+.header_container h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 1.2rem;
+}
+.header_container h1 span { 
+    display: block;
+    font-weight: 200;
+}
+.header_container p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+main .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .feature .col {
+    width: calc(90% / 3);
+}
+main .feature .card {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px #ddd;
+    padding: 2rem 2.1rem;
+}
+.card.cyan {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.card.red {
+    margin-bottom: 2rem;
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.card.blue {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.card.orange {
+    
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.card h2 {
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+.card p {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+img {
+    display: block;
+    margin-left: auto;
+    padding-top: 2rem;
+}
+/*---------------------------------Footer---------------------------------*/
+.atributtion {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+.atributtion a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: 600;
+}
+/*---------------------------------Small Devices---------------------------------*/
+@media (min-width: 770px) {
+    .container {
+        padding: 0 2rem;
+        width: 750px;
+    }
+}
+/*---------------------------------Medium Devices---------------------------------*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*---------------------------------Large Devices---------------------------------*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*---------------------------------Mobile Device---------------------------------*/
+@media (max-width: 767px) {
+    main {
+        padding: 60px 15px;
+    }
+    .header_container h1 {
+        font-size: 1.5rem;
+    }
+    .header_container p {
+        font-size: 0.9rem;
+    }
+    main .header_container {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 70px;
+    }
+    main .feature {
+        display: block;
+        padding: 0 1rem;
+    }
+    main .feature .col {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .card .orange {
+        margin: 0;
+    }
+}
